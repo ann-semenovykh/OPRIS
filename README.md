@@ -1,2 +1,2 @@
 # OPRIS
-Movies Internet Shop
+Movies Booking System
