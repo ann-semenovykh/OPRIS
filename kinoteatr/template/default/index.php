@@ -1,0 +1,1 @@
+<h2>Содержимое template\index.php</h2>
