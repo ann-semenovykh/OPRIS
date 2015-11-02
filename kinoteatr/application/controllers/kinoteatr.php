@@ -26,8 +26,9 @@
 		
 		public function index()
 		{
+			$data['movies'] = $this->model->get_all_movies(date("Y-m-d"));
 			$this->template->set_view('kinoteatr_index');
-			$this->template->render();
+			$this->template->render($data);
 		}
 		
 		

@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    outline        : 0;
+    vertical-align : baseline;
+    background     : transparent;
+}
+
+body{
+    font-size   : 10px;
+    font-family : Arial, Helvetica, sans-serif;
+	overflow-x : auto;
+    overflow-y : scroll;
+}
+
+html, body{
+    height : 100%;
+}
+
+#wrapper{
+	min-height: 100%;
+	position: relative;
+	margin-top: 0px;
+}
+
+.root{
+    min-height : 100%;
+    position   : relative;
+    margin     : 0 auto;
+	width: 980px;
+	padding-bottom: 41px;
+}
+
+#structure{
+	top: 0px;
+    width: 980px;
+    position: static;
+    height: 100%;
+}
+
+.centered_content{
+	margin-left:auto;
+    margin-right:auto;
+    width: 980px;	
+}
+
+
+#site_background{
+	position: absolute;
+    top: 0px;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position-x: 50%; 
+	background-image: url("/template/default/images/background.png");
+}
+
+.container{
+	top: 10px;
+	left: 0px;
+	width: 980px;
+	height: 154px;
+	margin: 0 auto;
+	position: absolute;
+}
+
+#logo_container{
+	top: -3px;
+    left: 256px;
+    width: 479px;
+    position: absolute;
+}
+
+.logo {
+	font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+	font-size: 70px;
+	font-family: Impact;
+	color: #000000;
+}
+
+header{
+	min-height : 100%;
+	top: 10px;
+	position: absolute;
+}
+
+#header_logo_line{
+	color: #000000;
+	background-color: #000000;
+	height: 14px;
+	width: 468px;
+	border: none;
+	top: 64px;
+	left: 6px;
+	position: absolute;
+}
+
+#header_menu{
+	top: 96px;
+    left: 5px;
+    width: 969px;
+    position: absolute;
+    height: 18px;
+    text-align: center;
+}
+
+.header_menu_button{
+	text-decoration: none;
+	display: inline-block;
+    width: 305px;
+    height: 18px;
+	font: bold 14px  'Arial Black';
+	color: #000000;
+}
+
+footer{
+	height: 63px;
+}
