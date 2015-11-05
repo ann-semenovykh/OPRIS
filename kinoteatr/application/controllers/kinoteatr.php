@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 	class Kinoteatr extends Application
 	{
@@ -8,7 +8,7 @@
 		{
 			$this->load_model('kinoteatr');
 			$this->template = $this->load_lib('template');
-			//Äîáàâèòü çàãğóçêó ñåññèè
+			//Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ³Ñ€ÑƒĞ·ĞºÑƒ ÑĞµÑÑĞ¸Ğ¸
 			
 			$blocks = array(
 				'header' => 'header',
@@ -17,8 +17,8 @@
 			);
 			
 			$data = array(
-				'title' => 'Êèíîòåàòğ',
-				'page_name' => 'Ãëàâíàÿ',
+				'title' => 'ĞšĞ¸Ğ½Ğ¾Ñ‚ĞµĞ°Ñ‚Ñ€',
+				'page_name' => 'Ğ“Ğ»Ğ°Ğ²Ğ½Ğ°Ñ',
 			);
 			$this->template->init('default',$blocks,$data);
 			

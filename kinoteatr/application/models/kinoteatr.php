@@ -13,6 +13,6 @@
 		//Все фильмы в выбранный день
 		public function get_all_movies($day)
 		{
-			return $this->conn->query('SELECT `id_mov`, `name` FROM `movies` WHERE 1')->resultset();
+			return $this->conn->query('SELECT `id_mov`, `name`, `genre`, `age`, `poster`  FROM `movies` WHERE 1')->resultset();
 		}
 	}
