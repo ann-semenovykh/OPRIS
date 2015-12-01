@@ -15,7 +15,7 @@
 			<li class = "about_movie">
 				<ul type="square">
 					<li>
-						<a href = "<?php echo _BASEURL_,'movie/info/', $movie->id_mov; ?>">
+						<a href = "<?php echo _BASEURL_,'movie/info/123', $movie->id_mov; ?>">
 							<p class= "movie_title"><?php echo $movie->name; ?></p>
 						</a>
 					</li>

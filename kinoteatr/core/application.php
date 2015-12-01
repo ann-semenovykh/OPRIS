@@ -30,7 +30,8 @@ class Application
 		{
 			if (is_null($this->uri['vars']))
 			{
-				$controller->{$this->uri['method']};
+				echo 'пусто';
+				$controller->{$this->uri['method']}();
 			}
 			else
 			{
