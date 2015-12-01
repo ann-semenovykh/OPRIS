@@ -98,6 +98,13 @@ header{
 	color: #000000;
 }
 
+.header_menu_button_out{
+	font: bold 14px  'Arial Black';
+	border: none;
+	background: none;
+	cursor: pointer; 
+	color:#000000;
+}
 
 article{
 	top: 10px;

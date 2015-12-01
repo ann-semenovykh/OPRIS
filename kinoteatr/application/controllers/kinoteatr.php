@@ -31,5 +31,4 @@
 			$this->template->render($data);
 		}
 		
-		
 	}
