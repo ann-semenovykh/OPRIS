@@ -30,7 +30,7 @@
 			$login = $_POST['login']; 
 			$password = $_POST['password'];
 			$conn = new Database(DBUSER,DBPASS,DBNAME);
-			$result = $conn->query("SELECT * FROM `users` WHERE `email`='$login' AND `pashash`='$password'")->resultset();
+			$result = $conn->query("SELECT * FROM `users` WHERE `account_name`='$login' AND `pashash`='$password'")->resultset();
 			if (is_null($result[0])){
 				$error = "Неверный пароль";
 			}
