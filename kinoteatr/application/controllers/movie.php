@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 
 	class Movie extends Application
 	{
@@ -8,7 +8,7 @@
 		{
 			$this->load_model('movie');
 			$this->template = $this->load_lib('template');
-			//Äîáàâèòü çàãğóçêó ñåññèè
+			//Ğ”Ğ¾Ğ±Ğ°Ğ²Ğ¸Ñ‚ÑŒ Ğ·Ğ°Ğ³Ñ€ÑƒĞ·ĞºÑƒ ÑĞµÑÑĞ¸Ğ¸
 			
 			$blocks = array(
 				'header' => 'header',
@@ -17,8 +17,8 @@
 			);
 			
 			$data = array(
-				'title' => 'Êèíîòåàòğ',
-				'page_name' => 'Ãëàâíàÿ',
+				'title' => 'ĞšĞ¸Ğ½Ğ¾Ñ‚ĞµĞ°Ñ‚Ñ€',
+				'page_name' => 'Ğ“Ğ»Ğ°Ğ²Ğ½Ğ°Ñ',
 			);
 			$this->template->init('default',$blocks,$data);
 			
@@ -27,7 +27,7 @@
 		
 		public function info($vars)
 		{
-			$data['movie_id'] = $vars;
+			$data['movies'] = $this->model->get_movie_info($vars);
 			$this->template->set_view('movie_info');
 			$this->template->render($data);
 		}
