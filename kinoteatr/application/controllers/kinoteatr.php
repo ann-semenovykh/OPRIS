@@ -27,10 +27,12 @@
 		public function index()
 		{
 			$data['movies'] = $this->model->get_all_movies(date("Y-m-d"));
-			foreach ($data['movies'] as $movie)
+			$data['halls']=$this->model->get_all_halls();
+			foreach ($data['movies'] as $movie){
+				foreach($data['halls'] as $hall)
 			{
-				 $data['halls'.$movie->id_mov] = $this->model->get_all_sessions($movie->id_mov);
-				 echo $data['halls1'];
+				 $data['sessions'.$movie->id_mov.$hall->id_hall] = $this->model->get_all_sessions($movie->id_mov,$hall->id_hall);
+			}
 			}
 			$this->template->set_view('kinoteatr_index');
 			$this->template->render($data);

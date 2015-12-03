@@ -15,9 +15,15 @@
 		{
 			return $this->conn->query('SELECT `id_mov`, `name`, `genre`, `age`, `poster`  FROM `movies`')->resultset();
 		}
-		//Все сеансы на фильм
-		public function get_all_sessions($mov)
+		//Все сеансы на фильм и зал
+		public function get_all_sessions($mov,$hall)
 		{
-			return $this->conn->query('SELECT `session`.`id_hall`,`name`,`time`,`price` FROM `session`,`hall` WHERE `session`.`id_hall`=`hall`.`id_hall` AND `session`.`id_mov`='.$mov)->resultset();
+			return $this->conn->query('SELECT `time`,`price` FROM `session` WHERE `session`.`id_hall`='.$hall.' AND `session`.`id_mov`='.$mov)->resultset();
+		}
+		
+		//Все залы
+		public function get_all_halls()
+		{
+			return $this->conn->query('SELECT * FROM hall')->resultset();
 		}
 	}
