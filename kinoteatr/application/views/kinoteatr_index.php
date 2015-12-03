@@ -7,10 +7,10 @@
 	<div id = "shedule_line" class= "content">
 		<h4 id = "shedule_title">РАСПИСАНИЕ</h4>
 	</div>
-	<?php foreach($movies as $movie): ?>
+	<?php foreach($movies as $movie){ ?>
 		<ul class= "movie_info" class= "content">
 			<li class = "movie_image">
-				<img src = "template\default\images\4.jpg">
+				<img src = "<?php echo $movie->poster; ?>">
 			</li>
 			<li class = "about_movie">
 				<ul type="square">
@@ -21,66 +21,70 @@
 					</li>
 				</ul>
 				<p class = "movie_rait"><?php echo $movie->genre.", ".$movie->age."+"; ?></p>
-				<p class = "movie_room">Зал 1</p>
-				<table class = "movie_sessions">
-					<tr>
-						<td class = "movie_time">10:00</td>
-						<td class = "movie_time">12:00</td>
-						<td class = "movie_time">15:00</td>
-						<td class = "movie_time">10:00</td>
-						<td class = "movie_time">12:00</td>
-						<td class = "movie_time">15:00</td>
-					</tr>
-					<tr>
-						<td class = "movie_price">100 р.</td>
-						<td class = "movie_price">150 р.</td>
-						<td class = "movie_price">200 р.</td>
-						<td class = "movie_price">100 р.</td>
-						<td class = "movie_price">150 р.</td>
-						<td class = "movie_price">200 р.</td>
-					</tr>
-				</table>
-								<p class = "movie_room">Зал 1</p>
-				<table class = "movie_sessions">
-					<tr>
-						<td class = "movie_time">10:00</td>
-						<td class = "movie_time">12:00</td>
-						<td class = "movie_time">15:00</td>
-						<td class = "movie_time">10:00</td>
-						<td class = "movie_time">12:00</td>
-						<td class = "movie_time">15:00</td>
-					</tr>
-					<tr>
-						<td class = "movie_price">100 р.</td>
-						<td class = "movie_price">150 р.</td>
-						<td class = "movie_price">200 р.</td>
-						<td class = "movie_price">100 р.</td>
-						<td class = "movie_price">150 р.</td>
-						<td class = "movie_price">200 р.</td>
-					</tr>
-				</table>
-								<p class = "movie_room">Зал 1</p>
-				<table class = "movie_sessions">
-					<tr>
-						<td class = "movie_time">10:00</td>
-						<td class = "movie_time">12:00</td>
-						<td class = "movie_time">15:00</td>
-						<td class = "movie_time">10:00</td>
-						<td class = "movie_time">12:00</td>
-						<td class = "movie_time">15:00</td>
-					</tr>
-					<tr>
-						<td class = "movie_price">100 р.</td>
-						<td class = "movie_price">150 р.</td>
-						<td class = "movie_price">200 р.</td>
-						<td class = "movie_price">100 р.</td>
-						<td class = "movie_price">150 р.</td>
-						<td class = "movie_price">200 р.</td>
-					</tr>
-				</table>
+				<?php 
+					
+				?>
+					<p class = "movie_room">Зал <?php echo $halls1->name; ?></p>
+					<table class = "movie_sessions">
+						<tr>
+							<td class = "movie_time">10:00</td>
+							<td class = "movie_time">12:00</td>
+							<td class = "movie_time">15:00</td>
+							<td class = "movie_time">10:00</td>
+							<td class = "movie_time">12:00</td>
+							<td class = "movie_time">15:00</td>
+						</tr>
+						<tr>
+							<td class = "movie_price">100 р.</td>
+							<td class = "movie_price">150 р.</td>
+							<td class = "movie_price">200 р.</td>
+							<td class = "movie_price">100 р.</td>
+							<td class = "movie_price">150 р.</td>
+							<td class = "movie_price">200 р.</td>
+						</tr>
+					</table>
+									<p class = "movie_room">Зал 1</p>
+					<table class = "movie_sessions">
+						<tr>
+							<td class = "movie_time">10:00</td>
+							<td class = "movie_time">12:00</td>
+							<td class = "movie_time">15:00</td>
+							<td class = "movie_time">10:00</td>
+							<td class = "movie_time">12:00</td>
+							<td class = "movie_time">15:00</td>
+						</tr>
+						<tr>
+							<td class = "movie_price">100 р.</td>
+							<td class = "movie_price">150 р.</td>
+							<td class = "movie_price">200 р.</td>
+							<td class = "movie_price">100 р.</td>
+							<td class = "movie_price">150 р.</td>
+							<td class = "movie_price">200 р.</td>
+						</tr>
+					</table>
+									<p class = "movie_room">Зал 1</p>
+					<table class = "movie_sessions">
+						<tr>
+							<td class = "movie_time">10:00</td>
+							<td class = "movie_time">12:00</td>
+							<td class = "movie_time">15:00</td>
+							<td class = "movie_time">10:00</td>
+							<td class = "movie_time">12:00</td>
+							<td class = "movie_time">15:00</td>
+						</tr>
+						<tr>
+							<td class = "movie_price">100 р.</td>
+							<td class = "movie_price">150 р.</td>
+							<td class = "movie_price">200 р.</td>
+							<td class = "movie_price">100 р.</td>
+							<td class = "movie_price">150 р.</td>
+							<td class = "movie_price">200 р.</td>
+						</tr>
+					</table>
+				<?php  ?>
 			</li>
 		</ul>
 		<div class = "shedule_line">
 		</div>
-	<?php endforeach ?>
+	<?php } ?>
 </div>
