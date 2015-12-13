@@ -216,7 +216,7 @@ article{
 	top:30px;
 }
  .txt:focus {
-    height:30px;
+    height:35px;
 	border: 2.5px dashed #B22222;
    }
 .login_titles{
