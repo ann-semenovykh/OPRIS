@@ -26,6 +26,18 @@
 			}
 			return $result;
 		}
+		
+		public function executedRowsCount()
+		{
+			$this->execute();
+			try{
+				$result = $this->stmt->rowCount();
+			}
+			catch (PDOException $e) {
+				echo $e->getMessage();
+			}
+			return $result;
+		}
 		public function resultset() 
 		{
 			$this->execute();
