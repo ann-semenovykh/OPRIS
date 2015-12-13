@@ -347,3 +347,71 @@ footer{
 	height: 50px;
 	background-color: #db0000;
 }
+
+#person_line{
+	width: 100%;
+	height: 50px;
+	background-color: #BC3427;
+}
+
+#personal_title{
+	top: 5px;
+    left: 40px;
+    position: relative;
+	color: #000;
+	font: normal normal normal 40px/1em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+
+.person_info{
+	padding-top: 20px;
+	position: relative;
+	width: 800px;
+	margin:auto;
+}
+
+.personName_line{
+	top: 10px;
+	left: 20px;
+	position: relative;
+	background-color: #FFF;
+	width: 350px;
+	height: 30px;
+	margin-bottom: 10px;
+}
+
+.person_image{
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.about_person{
+	top: 20px;
+	float: left;
+	position: relative;
+	 display: inline;
+	 background-color: #000;
+	 width: 550px;
+	 height: 310px;
+}
+
+#personalName_title{
+    position: relative;
+	color: #000;
+	font: normal normal normal 20px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+
+.personInfo_label{
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+	color: #BC3427;
+	font: normal normal normal 10px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+
+
+.personInfo_text{
+	margin-top: 10px;
+	margin-left: 10px;
+	right: 30px;
+}
