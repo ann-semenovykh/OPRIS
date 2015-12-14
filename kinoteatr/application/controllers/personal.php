@@ -23,6 +23,23 @@
 					$data['errors'] = $this->editInfo();
 				}
 			}
+			if ($_POST['upload_image']){
+				if($_FILES['picture']['type'] != "image/jpeg"){
+					$data['errors'] = "Некорректный тип файла";
+					echo $_FILES['picture']['type'];
+				} 
+				else{
+					do{
+						$filename = uniqid().$_FILES[picture]['name'];
+					}while(file_exists($filename));
+					if (move_uploaded_file($_FILES['picture']['tmp_name'],_IMAGEFOLDER_.$filename)){
+						$this->model->upload_image($filename);
+					}
+					else{
+						$data['errors'] = "Не удалост загрузить файл";
+					}
+				}
+			}
 			$persons = $this->model->get_info();
 			$data['person'] = array_shift($persons);
 			$data['actions'] = $this->model->get_actions();

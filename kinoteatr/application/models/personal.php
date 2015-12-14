@@ -36,4 +36,10 @@
 				" AND s.`id_hall` = h.`id_hall` AND s.`id_mov` = m.`id_mov`AND bs.`id_seat` = se.`id_seat`  ".
 				"ORDER BY bs.`reserve_time` limit 0,10")->resultSet();
 		}
+		
+		public function upload_image($filename)
+		{
+			$id_user = $_SESSION['id'];
+			return $this->conn->query("UPDATE `users` SET `picture`='template\\\default\\\images\\\\$filename' WHERE `id_user` = $id_user")->executedRowsCount();
+		}
 	}

@@ -5,7 +5,14 @@
 	<div class = "personInfo_container">
 		<ul class = "person_info">
 			<li class = "person_image">
-				<img src = "" width='250' height='350'/>
+				<div>
+				<img src = '<?php echo $person->picture;?>' width='250' height='350'/>
+				<form action = "/personal" method = "post" enctype="multipart/form-data">
+					<input type = "file" name = "picture">
+					<br>
+					<input type = "submit" vale = "Загрузить" name = "upload_image">
+				</form>
+				</div>
 			</li>
 			<li class = "about_person">
 				<div class = "personName_line">
