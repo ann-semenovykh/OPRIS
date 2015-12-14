@@ -1,4 +1,4 @@
-﻿html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -122,20 +122,6 @@ article{
 	height: 476px;
 }
 
-#login_line{
-	background-color: #000;
-	top: 40px;
-	height: 476px;
-}
-
-#logintitle_line{
-	width: 1029px;
-	top: -20px;
-	position: relative;
-	background-color: #B22222;
-	height: 75px;
-}
-
 #moviesNow_line{
 	width: 1029px;
 	top: 20px;
@@ -143,37 +129,13 @@ article{
 	background-color: #EFEEE6;
 	height: 75px;
 }
-#login_rect1{
-	width:450px;
-	position:relative;
-	top:-18px;
-	left:-250px;
-	background-color:#E6E6E6;
-	height:400px;
-}
-#login_rect2{
-	width:450px;
-	position:relative;
-	top:-154px;
-	left:500px;
-	background-color:#E6E6E6;
-	height:400px;
-}
+
 #moviesNow_title{
 	top: -5px;
     left: 40px;
     position: relative;
 	line-height: 1.4em;
 	color: #BC3427;
-	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-}
-
-#login_title{
-	top: -5px;
-    left: 40px;
-    position: relative;
-	line-height: 1.4em;
-	color: #000;
 	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
@@ -192,44 +154,6 @@ article{
 	left: 10px;
 	font: normal normal normal 40px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
     color: #FFF;
-}
-
-#login_labels{
-	
-}
-.txt{
-	height:35px;
-	border: 2.5px dashed #B22222;
-	position:relative;
-	left:70px;
-	top:30px;
-	}
-.btn{
-	height:40px;
-	width:200px; 
-	background:#2E2E2E; 
-	color:white;
-	font-size:11pt;
-	border-radius:  20px;
-	position:relative;
-	left:120px;
-	top:30px;
-}
- .txt:focus {
-    height:35px;
-	border: 2.5px dashed #B22222;
-   }
-.login_titles{
-	border-collapse: separate;
-    border-spacing: 5px;
-}
-
-.login_table{
-	border-spacing: 5px;
-	position: relative
-}
-.login_title{
-	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
 .movie_info{
@@ -304,7 +228,6 @@ article{
 	height: 1px;
 	background-color: #A8A6A6;
 }
-
 
 footer{
 }
