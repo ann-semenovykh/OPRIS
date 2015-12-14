@@ -26,4 +26,14 @@
 			return $this->conn->query("UPDATE `users` SET `name`='$name',`surname`='$surname',`birthdate`='$birthdate',".
 					"`email`='$email',`phonenum`='$phonenum' WHERE `id_user` = $id_user")->executedRowsCount();
 		}
+		
+		public function get_actions()
+		{
+			$id_user = $_SESSION['id'];
+			return $this->conn->query("SELECT m.`name` as `moviename`,h.`name`, se.`numseries`,se.`num`, s.`time`,s.`price`".
+				" FROM `booking_seats` bs,  `hall` h,`session` s, `movies` m, `seats` se".
+				" WHERE bs.`stat`= \"ordered\" AND bs.`id_user` = '$id_user' AND bs.`id_session`= s.`id_session`".
+				" AND s.`id_hall` = h.`id_hall` AND s.`id_mov` = m.`id_mov`AND bs.`id_seat` = se.`id_seat`  ".
+				"ORDER BY bs.`reserve_time` limit 0,10")->resultSet();
+		}
 	}

@@ -25,6 +25,7 @@
 			}
 			$persons = $this->model->get_info();
 			$data['person'] = array_shift($persons);
+			$data['actions'] = $this->model->get_actions();
 			$blocks = array(
 				'header' => 'header',
 				'index' => 'index',
