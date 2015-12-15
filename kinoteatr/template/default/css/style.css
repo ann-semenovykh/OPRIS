@@ -123,7 +123,19 @@ article{
 	height: 600px;
 	text-align:center;
 }
+#login_line{
+	background-color: #000;
+	top: 40px;
+	height: 476px;
+}
 
+#logintitle_line{
+	width: 1029px;
+	top: -20px;
+	position: relative;
+	background-color: #B22222;
+	height: 75px;
+}
 #moviesNow_line{
 	width: 1029px;
 	top: 20px;
@@ -132,7 +144,22 @@ article{
 	height: 75px;
 	text-align:left;
 }
-
+#login_rect1{
+	width:450px;
+	position:relative;
+	top:-18px;
+	left:-250px;
+	background-color:#E6E6E6;
+	height:400px;
+}
+#login_rect2{
+	width:450px;
+	position:relative;
+	top:-154px;
+	left:500px;
+	background-color:#E6E6E6;
+	height:400px;
+}
 #moviesNow_title{
 	top: -5px;
     left: 40px;
@@ -141,7 +168,14 @@ article{
 	color: #BC3427;
 	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
-
+#login_title{
+	top: -5px;
+    left: 40px;
+    position: relative;
+	line-height: 1.4em;
+	color: #000;
+	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
 #shedule{
 	padding-top: 30px;
 }
@@ -163,6 +197,43 @@ article{
 	padding-top: 20px;
 	position: relative;
 	width: 980px;
+}
+#login_labels{
+	
+}
+.txt{
+	height:35px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:70px;
+	top:30px;
+	}
+.btn{
+	height:40px;
+	width:200px; 
+	background:#2E2E2E; 
+	color:white;
+	font-size:11pt;
+	border-radius:  20px;
+	position:relative;
+	left:120px;
+	top:30px;
+}
+ .txt:focus {
+    height:35px;
+	border: 2.5px dashed #B22222;
+   }
+.login_titles{
+	border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.login_table{
+	border-spacing: 5px;
+	position: relative
+}
+.login_title{
+	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
 .movie_image{
@@ -383,7 +454,7 @@ footer{
 }
 
 .personInfo_label{
-	margin-left: 30px;
+	margin-left: 50px;
 	margin-top: 10px;
 	float: left;
 	color: #BC3427;
@@ -393,7 +464,7 @@ footer{
 
 .personInfo_text{
 	margin-top: 10px;
-	margin-left: 10px;
+	margin-left: 20px;
 	right: 30px;
 }
 
