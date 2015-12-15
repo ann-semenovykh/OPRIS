@@ -10,7 +10,7 @@
 	<?php foreach($movies as $movie){ ?>
 		<ul class= "movie_info" class= "content">
 			<li class = "movie_image">
-				<img src = "<?php echo $movie->poster;?>"width='150' height='220'/>
+<img src = "<?php echo "/template/default/images/", $movie->poster; ?>" width="160" height="220">
 			</li>
 			<li class = "about_movie">
 				<ul type="square">

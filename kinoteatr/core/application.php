@@ -40,7 +40,7 @@ class Application
 		}
 		else
 		{
-			$cotroller->index();
+			$controller->index();
 		}
 	}
 	

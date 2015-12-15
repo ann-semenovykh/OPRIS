@@ -13,7 +13,7 @@
 	</div>
 	<ul class= "movie_info" class= "content">
 			<li class = "movie_image">
-				<img src = "<?php echo $movie->poster; ?>" width="300" height="380">		
+				<img src = "<?php echo "../../template/default/images/", $movie->poster; ?>" width="300" height="380">		
 				<ul type="square">
 					<a href="<?php echo "http://www.kinopoisk.ru/film/", $movie->rateKP; ?>">
 						<img src="<?php echo "http://rating.kinopoisk.ru/", $movie->rateKP,".gif"; ?>" >
@@ -61,7 +61,5 @@
 				
 			</li>
 	</ul>
-		<div class = "shedule_line">
-		</div>
 	<?php endforeach ?>
 </div>

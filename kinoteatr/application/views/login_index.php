@@ -5,7 +5,9 @@
   <input name="password" type="password" size="15" maxlength="15"><br/><br/>
   <input type="submit" value="войти" name="submit_auth"><br/><br/>
 </form>
-
+<a href = "<?php echo _BASEURL_,'password/recovery'; ?>">
+							<p class= "movie_title">Восстановление пароля</p>
+						</a>
 <form action="/login" method="post">
 	<?php
 		if (isset($errors)){
