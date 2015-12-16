@@ -26,6 +26,8 @@ body{
 
 html, body{
     height : 100%;
+	min-height:100%;
+	position:relative; 
 }
 
 
@@ -109,7 +111,7 @@ header{
 article{
 	top: 10px;
 	position:relative;
-	margin-bottom:100px;
+	margin-bottom:200px;
 }
 
 .full_width{
@@ -123,6 +125,7 @@ article{
 	height: 600px;
 	text-align:center;
 }
+
 #login_line{
 	background-color: #000;
 	top: 40px;
@@ -136,6 +139,7 @@ article{
 	background-color: #B22222;
 	height: 75px;
 }
+
 #moviesNow_line{
 	width: 1029px;
 	top: 20px;
@@ -144,22 +148,7 @@ article{
 	height: 75px;
 	text-align:left;
 }
-#login_rect1{
-	width:450px;
-	position:relative;
-	top:-18px;
-	left:-250px;
-	background-color:#E6E6E6;
-	height:400px;
-}
-#login_rect2{
-	width:450px;
-	position:relative;
-	top:-154px;
-	left:500px;
-	background-color:#E6E6E6;
-	height:400px;
-}
+
 #moviesNow_title{
 	top: -5px;
     left: 40px;
@@ -168,14 +157,7 @@ article{
 	color: #BC3427;
 	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
-#login_title{
-	top: -5px;
-    left: 40px;
-    position: relative;
-	line-height: 1.4em;
-	color: #000;
-	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
-}
+
 #shedule{
 	padding-top: 30px;
 }
@@ -191,6 +173,31 @@ article{
 	left: 10px;
 	font: normal normal normal 40px/1.4em impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
     color: #FFF;
+}
+
+#login_rect1{
+	width:450px;
+	position:relative;
+	top:-18px;
+	left:-250px;
+	background-color:#E6E6E6;
+	height:400px;
+}
+#login_rect2{
+	width:450px;
+	position:relative;
+	top:-176px;
+	left:500px;
+	background-color:#E6E6E6;
+	height:400px;
+}
+#login_title{
+	top: -5px;
+    left: 40px;
+    position: relative;
+	line-height: 1.4em;
+	color: #000;
+	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
 .movie_info{
@@ -235,7 +242,6 @@ article{
 .login_title{
 	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
-
 .movie_image{
 	position: relative;
 	padding-left: 90px;
@@ -265,7 +271,6 @@ article{
 	font: normal normal normal 16px/1.4em 'Open Sans',sans-serif;
 	position: relative;
 	text-decoration: underline;
-	width: 500px;
 }
 
 .movie_abstract{
@@ -318,6 +323,8 @@ article{
 }
 footer{
 	  padding: 40px;
+	  position: absolute;
+bottom: 0;
 }
 #conteiner {width: 400px; margin: 7em auto;}
 #conteiner .loform {

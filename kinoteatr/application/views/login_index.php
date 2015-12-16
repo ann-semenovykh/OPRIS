@@ -15,8 +15,8 @@
     <br/>
   <input name="password" type="password" size="40" maxlength="15" class="txt" style="top:100px" placeholder="Пароль"><br/><br/>
   <input type="submit" class="btn" style="top:100px" value="Войти" name="submit_auth"><br/><br/>
-<a href = "<?php echo _BASEURL_,'password/recovery'; ?>">
-							<p class= "movie_title">Восстановление пароля</p>
+  <a href = "<?php echo _BASEURL_,'password'; ?>">
+							<p class= "movie_title" style="top:100px" align="center">Восстановление пароля</p>
 						</a>
 <form action="/login" method="post">
 	<?php
