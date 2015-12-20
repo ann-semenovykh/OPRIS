@@ -22,6 +22,8 @@
 			$data['time'] = $now;
 			$data['seats'] = $this->model->get_seats($session_id);
 			$data['session'] = $session_id;
+			$movies = $this->model->get_movie_info($session_id);
+			$data['movie'] = array_shift($movies);
 			$blocks = array(
 				'header' => 'header',
 				'index' => 'index',
@@ -42,7 +44,7 @@
 				$data['session'] = $_POST["session"];
 				$result = $this->model->reserve_seat($_POST["reserve"],$end,$_POST["session"]);
 			}
-			$data['seats'] = $this->model->get_seats(1);
+			$data['seats'] = $this->model->get_seats($_POST["session"]);
 			$blocks = array(
 				'index' => 'index',
 			);
@@ -61,7 +63,7 @@
 				$data['session'] = $_POST["session"];
 				$result = $this->model->free_seat($_POST["free"],$_POST["session"]);
 			}
-			$data['seats'] = $this->model->get_seats(1);
+			$data['seats'] = $this->model->get_seats($_POST["session"]);
 			$blocks = array(
 				'index' => 'index',
 			);
@@ -80,7 +82,7 @@
 				$data['session'] = $_POST["session"];
 				$result = $this->model->order_seats($now,$_POST["session"]);
 			}
-			$data['seats'] = $this->model->get_seats(1);
+			$data['seats'] = $this->model->get_seats($_POST["session"]);
 			$blocks = array(
 				'index' => 'index',
 			);

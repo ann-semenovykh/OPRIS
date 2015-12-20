@@ -16,9 +16,9 @@
 				<hr id="header_logo_line" class = "content" >
 			</div>
 			<div id = "header_menu" class = "content">
-				<a href = "" class = "header_menu_button">главная</a>
-				<a href = "" class = "header_menu_button">личный кабинет</a>
+				<a href = "http://kinoteatr/kinoteatr" class = "header_menu_button">главная</a>
 				<?php if (isset($_SESSION['id'])){
+					echo "<a href = \"http://kinoteatr/personal\" class = \"header_menu_button\">Личный кабинет</a>";
 					echo "<form action=\"/\" method=\"post\" class = \"header_menu_button\">".
 					"<input class=\"header_menu_button_out\"  type=\"submit\" value=\"выйти\" name=\"logout\"></form>";
 				}

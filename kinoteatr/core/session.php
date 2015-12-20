@@ -24,6 +24,7 @@
 	else if(isset($_POST['submit_auth'])){
 		login();
 	}
+
 	
 	function login(){
 		if ($_POST['login'] != "" && $_POST['password'] != ""){
@@ -44,3 +45,4 @@
 			$error = "Не все поля заполнены";
 		}
 	}
+	

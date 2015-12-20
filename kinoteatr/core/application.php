@@ -17,7 +17,7 @@ class Application
 		
 		if (!file_exists($file))
 		{
-			echo 'Файл контроллера не найден';
+			echo 'Р¤Р°Р№Р» РєРѕРЅС‚СЂРѕР»Р»РµСЂР° РЅРµ РЅР°Р№РґРµРЅ';
 			die;
 		}
 		
@@ -30,7 +30,6 @@ class Application
 		{
 			if (is_null($this->uri['vars']))
 			{
-				echo 'пусто';
 				$controller->{$this->uri['method']}();
 			}
 			else
@@ -40,7 +39,7 @@ class Application
 		}
 		else
 		{
-			$cotroller->index();
+			$controller->index();
 		}
 	}
 	
@@ -50,7 +49,7 @@ class Application
 		
 		if ( !file_exists($file))
 		{
-			echo 'Модель не найдена';
+			echo 'РњРѕРґРµР»СЊ РЅРµ РЅР°Р№РґРµРЅР°';
 			die;
 		}
 		
@@ -66,7 +65,7 @@ class Application
 		
 		if ( !file_exists($file))
 		{
-			echo 'Представление не найдено';
+			echo 'РџСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РЅРµ РЅР°Р№РґРµРЅРѕ';
 			die;
 		}
 		
@@ -84,7 +83,7 @@ class Application
 		
 		if ( !file_exists($file))
 		{
-			echo 'Библиотека не найдена';
+			echo 'Р‘РёР±Р»РёРѕС‚РµРєР° РЅРµ РЅР°Р№РґРµРЅР°';
 			die;
 		}
 		

@@ -21,23 +21,23 @@
 				<form name = "personInfo_form" action = "/personal" method = "post">
 					<div class = "personalInfo_field">
 						<h4 class = "personInfo_label">Имя</h4>
-						<input type = "text" class = "personInfo_text" value = "<?php echo $person->name;?>" name = "name">
+						<input type = "text" class = "personInfo_text" size="40" style="width:350px" value = "<?php echo $person->name;?>" name = "name">
 					</div>
 					<div class = "personalInfo_field">
 						<h4 class = "personInfo_label">Фамилия</h4>
-						<input type = "text" class = "personInfo_text" value = "<?php echo $person->surname;?>" name = "surname">
+						<input type = "text" class = "personInfo_text" size="33" style="width:301px" value = "<?php echo $person->surname;?>" name = "surname">
 					</div>
 					<div class = "personalInfo_field">
 						<h4 class = "personInfo_label">Дата рождения</h4>
-						<input type = "text" class = "personInfo_text" value = "<?php echo $person->birthdate;?>" name = "birthdate">
+						<input type = "text" class = "personInfo_text" size="26" style="width:249px" value = "<?php echo $person->birthdate;?>" name = "birthdate">
 					</div>
 					<div class = "personalInfo_field">
 						<h4 class = "personInfo_label">E-mail</h4>
-						<input type = "text" class = "personInfo_text" value = "<?php echo $person->email;?>" name = "email">
+						<input type = "text" class = "personInfo_text" size="38" style="width:334px" value = "<?php echo $person->email;?>" name = "email">
 					</div>
 					<div class = "personalInfo_field">
 						<h4 class = "personInfo_label">Телефон</h4>
-						<input type = "text" class = "personInfo_text" value = "<?php echo $person->phonenum;?>" name = "phonenum">
+						<input type = "text" class = "personInfo_text" size="34" style="width:307.5px" value = "<?php echo $person->phonenum;?>" name = "phonenum">
 					</div>
 					<?php
 						if (isset($errors)){
@@ -45,7 +45,7 @@
 							echo "<h4 class = \"personInfo_label\">$errors</h4>";
 						}
 					?>
-					<input type = "submit" name = "submit_edit" value = "Сохранить">
+					<input type = "submit" name = "submit_edit" class="personBtn" value = "Сохранить">
 				</form>
 			</li>
 		</ul>
@@ -58,34 +58,19 @@
 			<thead>
 				<tr>
 					<th>Название фильма
-						<form>
-							<input type="button" value = "up">
-							<input type="button" value = "down">
-						</form>
+						
 					</th>
 					<th>Зал
-						<form>
-							<input type="button" value = "up">
-							<input type="button" value = "down">
-						</form>
+						
 					</th>
 					<th>Место
-						<form>
-							<input type="button" value = "up">
-							<input type="button" value = "down">
-						</form>
+						
 					</th>
 					<th>Время
-						<form>
-							<input type="button" value = "up">
-							<input type="button" value = "down">
-						</form>
+						
 					</th>
 					<th>Цена
-						<form>
-							<input type="button" value = "up">
-							<input type="button" value = "down">
-						</form>
+						
 					</th>
 				</tr>
 			<thead>

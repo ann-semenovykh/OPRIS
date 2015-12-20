@@ -24,12 +24,13 @@ foreach($seats as $seat): ?>
 <?php 
 	if ($seat->numseries >$row){
 		if ($row==0){
-			echo "<tr>";
+			echo "<table class = \"seatsTable\"><tr>";
 		}
 		else {
-			echo "</tr><tr>";
+			echo "</tr></table><table class = \"seatsTable\"><tr>";
 		}
 		$row+=1;
+		echo "<td>$row</td>";
 	}
 ?>
 <td>
@@ -52,7 +53,8 @@ foreach($seats as $seat): ?>
 			$stat = "orderseat";
 		}
 	?>
-	<input type="button" onclick="<?php setFunc($seat,$time,$session);?>" class = "<?php echo $stat;?>">
+	<input type="button" onclick="<?php setFunc($seat,$time,$session);?>" class = "<?php echo $stat;?>" value = "<?php echo $seat->num;?>">
 </td>
 <?php endforeach ?>
 </tr>
+</table>

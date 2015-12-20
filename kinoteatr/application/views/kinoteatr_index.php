@@ -1,6 +1,20 @@
-﻿<div id = "movies_line" class = "full_width">
+﻿<div id = "moviesLine" class = "full_width">
 	<div id = "moviesNow_line" class= "content">
 		<h3 id = "moviesNow_title">СЕЙЧАС В КИНО</h3>
+		<ul>
+			<li class = "horLi">
+				<div class = "redRectangleMovie">
+				</div>
+			</li>
+			<li class = "horLi">
+				<div class = "redRectangleMovie">
+				</div>
+			</li>
+			<li class = "horLi">
+				<div class = "redRectangleMovie">
+				</div>
+			</li>
+		<ul>
 	</div>
 </div>
 <div id = "shedule" class = "content">
@@ -10,7 +24,7 @@
 	<?php foreach($movies as $movie){ ?>
 		<ul class= "movie_info" class= "content">
 			<li class = "movie_image">
-				<img src = "<?php echo $movie->poster;?>"width='150' height='220'/>
+<img src = "<?php echo $movie->poster; ?>" width="160" height="220">
 			</li>
 			<li class = "about_movie">
 				<ul type="square">
@@ -27,13 +41,21 @@
 					$m='sessions'.$movie->id_mov.$hall->id_hall;
 					if ($$m){
 				?>
-					<p class = "movie_room">Зал <?php echo print_r($hall->name." ".$hall->stat,false); 
+					<p class = "movie_room">Зал <?php echo $hall->name; 
 					?></p>
 					<table class = "movie_sessions">
 					<tr>
 					<?php	foreach ($$m as $session){
 					?>
-						<td class = "movie_time"><?php echo date("G:i",strtotime($session->time)); ?></td>
+						<td class = "movie_time">
+							<?php if (isset($_SESSION['id'])){?>
+								<a href = "<?php echo _BASEURL_,'reservation/index/', $session->id_session; ?>">
+							<?php } ?>
+							<?php echo date("G:i",strtotime($session->time)); ?>
+							<?php if (isset($_SESSION['id'])){?>
+								</a>
+							<?php } ?>
+						</td>
 					<?php }; ?>
 					</tr>
 					<tr>
