@@ -137,12 +137,15 @@ article{
 	text-align:center;
 }
 
+<<<<<<< HEAD
 #moviesLine{
 	background-color: #000;
 	height: 150px;
 	text-align:center;
 }
 
+=======
+>>>>>>> origin/master
 #login_line{
 	background-color: #000;
 	top: 40px;
@@ -504,10 +507,15 @@ bottom: 0;
 }
 
 .personInfo_label{
+<<<<<<< HEAD
 	left:50px;
 	position:relative;
 	margin:4px;
 	top:12px;
+=======
+	margin-left: 50px;
+	margin-top: 10px;
+>>>>>>> origin/master
 	float: left;
 	color: #BC3427;
 	font: normal normal normal 20px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
@@ -515,6 +523,7 @@ bottom: 0;
 
 
 .personInfo_text{
+<<<<<<< HEAD
 	height:35px;
 	margin:2px;
 	border: 2.5px dashed #B22222;
@@ -533,6 +542,11 @@ bottom: 0;
 	position:relative;
 	left:380px;
 	top:25px;
+=======
+	margin-top: 10px;
+	margin-left: 20px;
+	right: 30px;
+>>>>>>> origin/master
 }
 
 #personalActions_line{
