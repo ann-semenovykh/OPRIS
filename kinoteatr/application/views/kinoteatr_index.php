@@ -24,11 +24,7 @@
 	<?php foreach($movies as $movie){ ?>
 		<ul class= "movie_info" class= "content">
 			<li class = "movie_image">
-<<<<<<< HEAD
 <img src = "<?php echo $movie->poster; ?>" width="160" height="220">
-=======
-<img src = "<?php echo "/template/default/images/", $movie->poster; ?>" width="160" height="220">
->>>>>>> origin/master
 			</li>
 			<li class = "about_movie">
 				<ul type="square">
