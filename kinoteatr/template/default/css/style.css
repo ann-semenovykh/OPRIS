@@ -89,6 +89,17 @@ header{
     height: 18px;
     text-align: center;
 }
+.horLi{
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+.redRectangleMovie{
+	width: 50px;
+	height: 50px;
+	color: #BC3427;
+}
 
 .header_menu_button{
 	top: 10px;
@@ -123,6 +134,12 @@ article{
 #movies_line{
 	background-color: #000;
 	height: 600px;
+	text-align:center;
+}
+
+#moviesLine{
+	background-color: #000;
+	height: 150px;
 	text-align:center;
 }
 
@@ -379,46 +396,72 @@ bottom: 0;
 	width:220px;
 }
 
-#seatsform{
+.seatsform{
+	margin: auto;
+}
+
+.seatsTable{
 	margin: auto;
 }
 
 .freeseat{
+	border-radius: 8px;
 	width: 50px;
 	height: 50px;
-	background-color: #0e7a00;
+	background-color: #A9F5F2;
 }
 
 .reserveseat{
+	border-radius: 8px;
 	width: 50px;
 	height: 50px;
-	background-color: #0015b3;
+	background-color: #01DF3A;
 }
 
 .cantreserveseat{
+	border-radius: 8px;
 	width: 50px;
 	height: 50px;
-	background-color: #db6e00;
+	background-color: #FF8000;
 }
 
 .orderseat{
+	border-radius: 8px;
 	width: 50px;
 	height: 50px;
 	background-color: #db0000;
 }
 
+.orderButton{
+	height:30px;
+	width:150px; 
+	background:#2E2E2E; 
+	color:white;
+	font-size:11pt;
+	border-radius:  20px;
+	position:relative;
+	top:25px;
+}
+
+.orderMenu{
+	text-align: center;
+}
+
+.reserv_movie_info{
+	font: normal normal normal 18px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+
 #person_line{
 	width: 100%;
-	height: 50px;
+	height: 75px;
 	background-color: #BC3427;
 }
 
 #personal_title{
-	top: 5px;
     left: 40px;
     position: relative;
 	color: #000;
-	font: normal normal normal 40px/1em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
 .person_info{
@@ -433,8 +476,8 @@ bottom: 0;
 	left: 20px;
 	position: relative;
 	background-color: #FFF;
-	width: 350px;
-	height: 30px;
+	width: 500px;
+	height: 35px;
 	margin-bottom: 10px;
 }
 
@@ -461,42 +504,54 @@ bottom: 0;
 }
 
 .personInfo_label{
-	margin-left: 50px;
-	margin-top: 10px;
+	left:50px;
+	position:relative;
+	margin:4px;
+	top:12px;
 	float: left;
 	color: #BC3427;
-	font: normal normal normal 10px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	font: normal normal normal 20px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
 
 .personInfo_text{
-	margin-top: 10px;
-	margin-left: 20px;
-	right: 30px;
+	height:35px;
+	margin:2px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:90px;
+	top:10px;
+}
+
+.personBtn{
+	height:30px;
+	width:150px; 
+	background:#2E2E2E; 
+	color:white;
+	font-size:11pt;
+	border-radius:  20px;
+	position:relative;
+	left:380px;
+	top:25px;
 }
 
 #personalActions_line{
 	position: relative;
 	width: 100%;
-	height: 50px;
+	height: 75px;
 	background-color: #BC3427;
 }
 
 #personalActions_title{
-	top: 5px;
     left: 40px;
     position: relative;
 	color: #000;
-	font: normal normal normal 40px/1em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+	font: normal normal normal 60px/1.4em Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
 .personInfo_container{
 	position: relative;
-	height: 400px;
-}
-
-#personalActions_container{
-	
+	height: 450px;
 }
 
 #personalActions_table{

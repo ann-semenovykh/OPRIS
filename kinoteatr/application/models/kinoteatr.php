@@ -18,7 +18,7 @@
 		//Все сеансы на фильм и зал
 		public function get_all_sessions($mov,$hall)
 		{
-			return $this->conn->query('SELECT `time`,`price` FROM `session` WHERE `session`.`id_hall`='.$hall.' AND `session`.`id_mov`='.$mov)->resultset();
+			return $this->conn->query('SELECT `id_session`,`time`,`price` FROM `session` WHERE `session`.`id_hall`='.$hall.' AND `session`.`id_mov`='.$mov.' order by `time`')->resultset();
 		}
 		
 		//Все залы

@@ -13,7 +13,7 @@
 	</div>
 	<ul class= "movie_info" class= "content">
 			<li class = "movie_image">
-				<img src = "<?php echo "../../template/default/images/", $movie->poster; ?>" width="300" height="380">		
+				<img src = "<?php echo "../../",$movie->poster; ?>" width="300" height="380">		
 				<ul type="square">
 					<a href="<?php echo "http://www.kinopoisk.ru/film/", $movie->rateKP; ?>">
 						<img src="<?php echo "http://rating.kinopoisk.ru/", $movie->rateKP,".gif"; ?>" >
@@ -40,13 +40,21 @@
 					$m='sessions'.$movie->id_mov.$hall->id_hall;
 					if ($$m){
 				?>
-					<p class = "movie_room">Зал <?php echo print_r($hall->name." ".$hall->stat,false); 
+					<p class = "movie_room">Зал <?php echo $hall->name; 
 					?></p>
 					<table class = "movie_sessions">
 					<tr>
 					<?php	foreach ($$m as $session){
 					?>
-						<td class = "movie_time"><?php echo date("G:i",strtotime($session->time)); ?></td>
+						<td class = "movie_time">
+							<?php if (isset($_SESSION['id'])){?>
+								<a href = "<?php echo _BASEURL_,'reservation/index/', $session->id_session; ?>">
+							<?php } ?>
+							<?php echo date("G:i",strtotime($session->time)); ?>
+							<?php if (isset($_SESSION['id'])){?>
+								</a>
+							<?php } ?>
+						</td>
 					<?php }; ?>
 					</tr>
 					<tr>
