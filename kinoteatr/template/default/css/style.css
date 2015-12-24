@@ -497,6 +497,15 @@ bottom: 0;
 	 height: 310px;
 }
 
+.admin_panel{
+	top: 20px;
+	float: left;
+	position: relative;
+	 display: inline;
+	 background-color: #000;
+	 width: 550px;
+	 height: 580px;
+}
 #personalName_title{
     position: relative;
 	color: #000;
@@ -522,7 +531,24 @@ bottom: 0;
 	left:90px;
 	top:10px;
 }
-
+.adminInfo_text{
+	height:35px;
+	margin:2px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:90px;
+	top:10px;
+}
+.adminInfo_textpic{
+	height:35px;
+	margin:2px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:90px;
+	top:10px;
+	width:250px;
+	color:#FFFFFF;
+}
 .personBtn{
 	height:30px;
 	width:150px; 

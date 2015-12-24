@@ -37,7 +37,7 @@
 				'footer' => 'footer'
 			);
 			$this->template->init('default',$blocks,$data);
-			$this->template->set_view('admin_index');
+			$this->template->set_view('admin_add_movie');
 			$this->template->render($data);
 		}
 		
