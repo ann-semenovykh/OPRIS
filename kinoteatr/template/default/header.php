@@ -18,7 +18,12 @@
 			<div id = "header_menu" class = "content">
 				<a href = "http://kinoteatr/kinoteatr" class = "header_menu_button">главная</a>
 				<?php if (isset($_SESSION['id'])){
-					echo "<a href = \"http://kinoteatr/personal\" class = \"header_menu_button\">Личный кабинет</a>";
+					if (isset($_SESSION['isadmin'])){
+						echo "<a href = \"http://kinoteatr/admin\" class = \"header_menu_button\">Панель администратора</a>";
+					}
+					else{
+						echo "<a href = \"http://kinoteatr/personal\" class = \"header_menu_button\">Личный кабинет</a>";
+					}
 					echo "<form action=\"/\" method=\"post\" class = \"header_menu_button\">".
 					"<input class=\"header_menu_button_out\"  type=\"submit\" value=\"выйти\" name=\"logout\"></form>";
 				}

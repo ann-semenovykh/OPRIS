@@ -506,10 +506,31 @@ bottom: 0;
 	 width: 550px;
 	 height: 580px;
 }
+
 #personalName_title{
     position: relative;
 	color: #000;
 	font: normal normal normal 20px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
+
+
+.adminInfo_text{
+	height:35px;
+	margin:2px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:90px;
+	top:10px;
+}
+.adminInfo_textpic{
+	height:35px;
+	margin:2px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:90px;
+	top:10px;
+	width:250px;
+	color:#FFFFFF;
 }
 
 .personInfo_label{
@@ -531,24 +552,7 @@ bottom: 0;
 	left:90px;
 	top:10px;
 }
-.adminInfo_text{
-	height:35px;
-	margin:2px;
-	border: 2.5px dashed #B22222;
-	position:relative;
-	left:90px;
-	top:10px;
-}
-.adminInfo_textpic{
-	height:35px;
-	margin:2px;
-	border: 2.5px dashed #B22222;
-	position:relative;
-	left:90px;
-	top:10px;
-	width:250px;
-	color:#FFFFFF;
-}
+
 .personBtn{
 	height:30px;
 	width:150px; 

@@ -37,18 +37,7 @@
 			return $this->conn->query("SELECT * FROM `movies` WHERE `id_mov` = $id_movie")->resultSet();
 		}
 		
-		public function edit_movie($id_movie){
-			$name = $_POST['name'];
-			$genre = $_POST['genre'];
-			$article = $_POST['article'];
-			$year = $_POST['year'];
-			$actors = $_POST['actors'];
-			$director = $_POST['director'];
-			$trailer = $_POST['trailer'];
-			$country  = $_POST['country'];
-			$rateKP = $_POST['rateKP'];
-			$rateMPA = $_POST['rateMPA'];
-			$time = $_POST['time'];
+		public function edit_movie($id_movie,$name,$genre,$article,$year,$actors,$director,$trailer,$country,$rateKP,$rateMPA,$time){
 			if (is_uploaded_file($_FILES['picture']['tmp_name'])){
 				do{
 					$filename = uniqid().$_FILES[picture]['name'];
@@ -57,8 +46,13 @@
 			}
 			move_uploaded_file($_FILES['picture']['tmp_name'],_IMAGEFOLDER_.$filename);
 			return $this->conn->query("UPDATE `movies` SET`name`='$name',`genre`='$genre',`rateKP`='$rateKP',`ratelmdb`='rateImdb',".
-				"`trailer`='$trailer',`rateMPA`='$rateMPA',`abstract`='$abstract',`director`='$director',`actors`='$actors',`year`='$year',".
-				"`time`='$time',`country`='country' WHERE `id_mov` = $id_movie")->executedRowsCount();
+				"`trailer`='$trailer',`rateMPA`='$rateMPA',`abstract`='$article',`director`='$director',`actors`='$actors',`year`='$year',".
+				"`time`='$time',`country`='$country' WHERE `id_mov` = $id_movie")->executedRowsCount();
+		}
+		
+		public function deleteMovie($id_movie){
+			$this->conn->query("DELETE FROM `session` WHERE `id_mov` = $id_movie")->executedRowsCount();
+			$this->conn->query("DELETE FROM `movies` WHERE `id_mov` = $id_movie")->executedRowsCount();
 		}
 		
 		public function getAll_Movies(){
@@ -67,6 +61,19 @@
 		
 		public function getAll_Halls(){
 			return $this->conn->query("SELECT * FROM `hall`")->resultSet();
+		}
+		
+		public function getSession($id_session){
+			return $this->conn->query("SELECT * FROM `session` WHERE `id_session` = $id_session")->resultSet();
+		}
+		
+		public function getAll_Sessions(){
+			return $this->conn->query("SELECT s.`id_session`,m.`name`,s.`time`,h.`name` as `hall` FROM `session` s,`movies` m,`hall` h".
+			" WHERE s.`id_mov` = m.`id_mov` AND s.`id_hall` = h.`id_hall`")->resultSet();
+		}
+		
+		public function deleteSession($id_session){
+			return $this->conn->query("DELETE FROM `session` WHERE `id_session` = $id_session")->resultSet();
 		}
 		
 		public function add_session($mov,$hall,$date,$price){

@@ -38,6 +38,8 @@
 			else{
 				setcookie ("userId", $result[0]->id_user, time() + 86400);
 				setcookie ("password", $result[0]->pasHash, time() + 86400);
+				if ($result[0]->isadmin == "Y")
+					$_SESSION['isadmin'] = $result[0]->id_user;
 				$_SESSION['id'] = $result[0]->id_user;
 			}
 		}
