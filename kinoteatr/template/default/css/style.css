@@ -543,7 +543,14 @@ bottom: 0;
 	font: normal normal normal 20px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
 }
 
-
+.panelInfo_label{
+	left:50px;
+	position:relative;
+	margin:4px;
+	top:12px;
+	color: #BC3427;
+	font: normal normal normal 20px Impact,impact-w01-2010,impact-w02-2010,impact-w10-2010,sans-serif;
+}
 .personInfo_text{
 	height:35px;
 	margin:2px;
@@ -552,7 +559,14 @@ bottom: 0;
 	left:90px;
 	top:10px;
 }
-
+.panelInfo_text{
+	height:35px;
+	margin:2px;
+	border: 2.5px dashed #B22222;
+	position:relative;
+	left:50px;
+	top:10px;
+}
 .personBtn{
 	height:30px;
 	width:150px; 
@@ -564,7 +578,17 @@ bottom: 0;
 	left:380px;
 	top:25px;
 }
-
+.panelBtn{
+	height:30px;
+	width:150px; 
+	background:#2E2E2E; 
+	color:white;
+	font-size:11pt;
+	border-radius:  20px;
+	position:relative;
+	left:120px;
+	top:25px;
+}
 #personalActions_line{
 	position: relative;
 	width: 100%;
