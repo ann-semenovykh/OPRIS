@@ -10,6 +10,11 @@
 			$this->conn = new Database(DBUSER,DBPASS,DBNAME); //Параметры определены в config.php
 		}
 		
+		public function get_all_movies1($day)
+		{
+			return $this->conn->query('SELECT `id_mov`, `name`, `genre`, `age`, `poster`  FROM `movies` LIMIT 0,5')->resultset();
+		}
+		
 		//Все фильмы в выбранный день
 		public function get_all_movies($day)
 		{
@@ -18,7 +23,7 @@
 		//Все сеансы на фильм и зал
 		public function get_all_sessions($mov,$hall)
 		{
-			return $this->conn->query('SELECT `id_session`,`time`,`price` FROM `session` WHERE `session`.`id_hall`='.$hall.' AND `session`.`id_mov`='.$mov.' order by `time`')->resultset();
+			return $this->conn->query('SELECT `time`,`price` FROM `session` WHERE `session`.`id_hall`='.$hall.' AND `session`.`id_mov`='.$mov.' order by `time`')->resultset();
 		}
 		
 		//Все залы

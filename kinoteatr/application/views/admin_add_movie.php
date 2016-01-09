@@ -6,7 +6,7 @@
 		<ul class = "person_info">
 			<li class = "person_image">
 				<div>
-				<img src = 'template\default\images\no_picture.jpg' width='250' height='350'/>
+				<img src = '..//..//template\default\images\no_picture.jpg' width='250' height='350'/>
 				</div>
 			</li>
 			<li class = "admin_panel">

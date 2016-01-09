@@ -43,12 +43,14 @@
 		
 		public function add_movie()
 		{
-			$data['errors'] = $this->checkMovieInfo();
-			if (!isset($data['errors'])){
-				$data['errors'] = $this->checkPoster();
-			}
-			if (!isset($data['errors'])){
-				 $this->model->add_movie();
+			if (isset($_POST['submit_new'])){
+				$data['errors'] = $this->checkMovieInfo();
+				if (!isset($data['errors'])){
+					$data['errors'] = $this->checkPoster();
+					if (!isset($data['errors'])){
+						$this->model->add_movie();
+					}
+				}
 			}
 			$blocks = array(
 				'header' => 'header',
@@ -118,7 +120,7 @@
 					$hall = $_POST['hall_id'];
 					$date = $_POST['setDate'];
 					$price = $_POST['price'];
-					$data['errors'] = $this->model->add_session($mov,$hall,$date,$price);
+					$this->model->add_session($mov,$hall,$date,$price);
 				}
 			}
 			$data['movies'] = $this->model->getAll_Movies();
@@ -141,7 +143,7 @@
 					$hall = $_POST['hall_id'];
 					$date = $_POST['setDate'];
 					$price = $_POST['price'];
-					$data['errors'] = $this->model->add_session($mov,$hall,$date,$price);
+					$this->model->add_session($mov,$hall,$date,$price);
 				}
 			}
 			if (empty($id_session))

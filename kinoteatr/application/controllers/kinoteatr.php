@@ -26,6 +26,7 @@
 		
 		public function index()
 		{
+			$data['movies1'] = $this->model->get_all_movies1(date("Y-m-d"));
 			$data['movies'] = $this->model->get_all_movies(date("Y-m-d"));
 			$data['halls']=$this->model->get_all_halls();
 			foreach ($data['movies'] as $movie){
